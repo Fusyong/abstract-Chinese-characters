@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>楷体笔顺</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header>
+    <p class="kicker">kaiti_GB2312</p>
+    <h1>楷体笔顺</h1>
+    <p class="lead">每笔先收成五类：1 横、2 竖、3 撇、4 点或捺、5 折，再与总表的笔顺编号对齐。同号笔画的先后，以及每一笔的起笔和收笔，只比较中线的两个端点：斜线往右下平移，先碰到的端点是起笔，先碰到起笔的那一笔先写。右下方向暂与水平成 54°，对应右手小臂以下的活动方式。转折点先不参加比较。部件用同一条规则，纯字形的拆分还没有。类别对不上时，才用笔顺动画的分笔图。</p>
+  </header>
+  <div class="toolbar">
+    <nav id="chars" aria-label="选择汉字"></nav>
+    <label class="toggle"><input id="show-line" type="checkbox"> 显示中线</label>
+  </div>
+  <p id="summary"></p>
+  <p class="legend"><span><i class="swatch"></i>已写</span><span><i class="swatch red"></i>当前</span><span><i class="swatch future"></i>未写</span><span>中线为折线，端头保留</span></p>
+  <main id="board"></main>
+  <script src="app.js"></script>
+</body>
+</html>
